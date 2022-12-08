@@ -1,0 +1,32 @@
+.caixa{
+    background-color: #3F51B5 !important;
+}
+
+.titulo{
+    color:white !important;
+    font-weight: bold !important;
+}
+
+.paragrafo{
+    color:white !important;
+    font-weight: small;
+}
+
+.botao{
+    border-color: white !important;
+     background-color: #3F51B5 !important;
+      color: white !important ;
+}
+
+.postagens{
+    background-color: white !important;
+}
+
+.imagem3{
+    background-image: url(https://img.freepik.com/fotos-gratis/vista-superior-de-vegetais-e-frutas-na-sacola_23-2148949707.jpg?w=1060&t=st=1669817375~exp=1669817975~hmac=9aa5e92f51bd8abfa7af9247db06294c79152835a2f68f3d6bdd8d111a8e354f);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height:100vh;
+    background-size: cover;
+    background-position: center;
+}

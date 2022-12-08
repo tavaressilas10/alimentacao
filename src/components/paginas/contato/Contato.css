@@ -1,0 +1,17 @@
+.imagem2{
+    background-image: url(https://pontualservicosdf.com.br/wp-content/uploads/2022/04/contato.jpg);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center
+}
+
+.texto2{
+    font-weight: bold !important;
+
+}
+
+.btnCancelar{
+    margin-right: 20px !important;
+}

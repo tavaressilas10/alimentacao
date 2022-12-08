@@ -1,0 +1,22 @@
+.cursor{
+    cursor: pointer;
+    color: white;
+}
+
+.text-decorator-none{
+    text-decoration: none !important;
+    color:white;
+}
+
+.text-decorator-none :hover{
+    color:rgb(161, 161, 161);
+    transition:0.3s
+}
+
+.colorb{
+    background-image: linear-gradient(#1c234e, #3f51b5,#3f51b5) !important;
+}
+
+.paddingr{
+    padding-right: 103vh;
+}

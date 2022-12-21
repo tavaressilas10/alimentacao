@@ -1,0 +1,32 @@
+.titulo{
+   color: rgb(0, 0, 0) !important;
+   font-weight: bold !important;
+}
+
+.botao{
+    border-color: rgb(0, 0, 0) !important;
+    background-color: #000000;
+    color: rgb(0, 0, 0) !important;
+}
+
+.postagens{
+    background:linear-gradient(rgba(0, 250, 75, 0.5),transparent);
+}
+
+.text-decorator-none{
+    text-decoration: none;
+   
+}
+
+.caixa{
+    background:linear-gradient(rgba(0, 250, 75, 0.5),transparent);
+}
+
+.imagem2{
+    background-image: url(img/home2.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}

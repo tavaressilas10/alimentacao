@@ -1,0 +1,11 @@
+.cursor{
+    cursor: pointer;
+    color: white;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+.tolbar{
+    background-color: rgba(0, 250, 75, 0.5)
+}

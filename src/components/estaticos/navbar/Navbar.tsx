@@ -9,6 +9,7 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { useDispatch } from "react-redux";
 import { addToken } from '../../../store/tokens/actions';
 import {toast} from 'react-toastify';
+import HomeIcon from '@mui/icons-material/Home';
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -37,45 +38,40 @@ function Navbar() {
     if(token != ""){
         navbarComponent = <AppBar position="static">
         <Toolbar variant="dense" className='tolbar'>
-            <Box className='cursor'>
-                <Typography variant="h5" color="inherit">
-                    B
-                </Typography>
-            </Box>
 
             <Box display="flex" justifyContent="start">
                 <Link to="/home" className="text-decorator-none">
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
-                            home
+                             <HomeIcon sx={{ fontSize: 30 }} />
                         </Typography>
                     </Box>
                 </Link>
                 <Link to="/postagens" className="text-decorator-none">
                     <Box mx={1} className='cursor'>
                         <Typography variant="h6" color="inherit">
-                            postagens
+                            Postagens
                         </Typography>
                     </Box>
                 </Link>
                 <Link to="/temas" className="text-decorator-none">
                 <Box mx={1} className='cursor'>
                     <Typography variant="h6" color="inherit">
-                        temas
+                        Temas
                     </Typography>
                 </Box>
                 </Link>
                 <Link to="/formularioTema" className="text-decorator-none">
                 <Box mx={1} className='cursor'>
                     <Typography variant="h6" color="inherit">
-                        cadastrar tema
+                        Cadastrar Tema
                     </Typography>
                 </Box>
                 </Link>
               
                     <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
-                            logout
+                           Sair
                         </Typography>
                     </Box>
                 

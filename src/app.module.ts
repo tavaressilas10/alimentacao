@@ -26,10 +26,10 @@ import { UsuarioModule } from './usuario/usuario.module';
       url: process.env.DATABASE_URL,
       logging: false,
       dropSchema: false,
-      ssl: {
-        rejectUnauthorized: false
-      },
-      synchronize: true,
+      ssl: process.env.NODE_ENV === 'production' 
+        ? { rejectUnauthorized: false } 
+        : false,
+      synchronize: process.env.NODE_ENV === 'development',
       autoLoadEntities: true,
     }),
     TemaModule,

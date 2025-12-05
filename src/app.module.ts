@@ -11,27 +11,27 @@ import { UsuarioModule } from './usuario/usuario.module';
 
 @Module({
   imports: [
-    //TypeOrmModule.forRoot({
-    //  type: 'mysql',
-    //  host: 'localhost',
-    //  port:3306,
-    //  username:'root',
-    //  password:'root',
-    //  database:'db_alimentacao',
-    //  entities: [Tema, Usuario, Postagem],
-    //  synchronize: true
-    //}),
     TypeOrmModule.forRoot({
-      type:'postgres',
-      url: process.env.DATABASE_URL,
-      logging: false,
-      dropSchema: false,
-      ssl: {
-        rejectUnauthorized: false
-      },
-      synchronize: true,
-      autoLoadEntities: true,
+      type: 'mysql',
+      host: 'localhost',
+      port:3306,
+      username:'root',
+      password:'mysql',
+      database:'bd_green',
+      entities: [Tema, Usuario, Postagem],
+      synchronize: true
     }),
+    //TypeOrmModule.forRoot({
+    //  type:'postgres',
+    //  url: process.env.DATABASE_URL,
+    //  logging: false,
+    //  dropSchema: false,
+    //  ssl: {
+    //    rejectUnauthorized: false
+    //  },
+    //  synchronize: true,
+    //  autoLoadEntities: true,
+    //}),
     TemaModule,
     UsuarioModule,
     PostagemModule,
